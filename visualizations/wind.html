@@ -1,37 +1,58 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
+<html lang="en">
 
+<head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-    <!-- Add a title here -->
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand bg-info text-white p-2 bordered rounded" href="#">Latitude</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Plots
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./visualizations/temp.html">Max Temperature</a></li>
+                        <li><a class="dropdown-item" href="./visualizations/humidity.html">Humidity</a></li>
+                        <li><a class="dropdown-item" href="./visualizations/cloudiness.html">Cloudiness</a></li>
+                        <li><a class="dropdown-item" href="./visualizations/wind.html">Wind Speed</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"
+                        href="./comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <main class="container">
+        <div class="row">
 
-    <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
-
-    <!-- Our own CSS stylesheet -->
-    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
-
-  </head>
-
-  <body>
-    <!-- Start of navbar -->
-    <!-- End of navbar -->
-
-    <!-- Start of container -->
-
-          <!-- Start of Visualizations imageNav Area -->
-          <!-- End of the Visualizations imageNav Area -->
-
-    <!-- End of container -->
-
-    <!-- jQuery CDN -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-    <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  </body>
-
-</html>
+            <section class="col-md-8">
+                <h2>Wind Speed</h2>
+            </section>
+            <hr>
+            <img class="float-start w-50" src="../assets/images/Fig4.png" alt="City Latitude vs Max Temperature">
+<p>This plot shows the lattitude vs the wind speed. There's not a noticible relationship, but most of the data does cluster near the 0-10 speed.
+</p>    </body>
